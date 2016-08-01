@@ -25,6 +25,7 @@ double yaw2 = rotation(1,2);
 Although our method only use roll and pitch angles (vertical direction), for IMU with high quality (that means the yaw angle is accurate, too), you can input the yaw angle, otherwise, set it to 0.
 
 Note: 
-1. the code works fine if the relative rotation angle is under 5 degrees.
-2. If only intra-camera feature correspondences are used, the scale of translation cannot be recovered, however, it makes our method robust to high dynamic scene (seeing our work). So, if you want to achieve the two goals simutanlously, please intergrate the Acc. from IMU or use extra inter-camera correspondences if the FoVs of your camera configuration overlap .
+-  the code works fine if the relative rotation angle is under 5 degrees.
+
+-  If only intra-camera feature correspondences are used, the scale of translation cannot be recovered, however, it makes our method robust to high dynamic scene (seeing our work). So, if you want to achieve the two goals simutanlously, please intergrate the Acc. from IMU or use extra inter-camera correspondences if the FoVs of your camera configuration overlap .
 
