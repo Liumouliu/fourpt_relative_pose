@@ -5,7 +5,7 @@ This contains a 4-point relative pose solver described in : [Robust and efficien
 
 The code can be integrated into the OpenGV lib without much effort.
 
-To adapt to the interface provided by OpenGV lib, the rotation matrix provided by OpenGV store the euler angles:
+To adapt to the interface provided by OpenGV lib, the rotation matrix provided by OpenGV store the Euler angles:
 
 <pre>
 
@@ -25,10 +25,10 @@ double yaw2 = rotation(1,2);
 
 </pre>
 
-Although our method only use roll and pitch angles (vertical direction), for IMU with high quality (that means the yaw angle is accurate, too), you can input the yaw angle, otherwise, set it to 0.
+Although our method only uses roll and pitch angles (vertical direction), for IMU with high quality (that means the yaw angle is accurate, too), you can input the yaw angle, otherwise, set it to 0.
 
 Note: 
 -  the code works fine if the relative rotation angle is under 5 degrees.
 
--  If only intra-camera feature correspondences are used, the scale of translation cannot be recovered, however, it makes our method robust to high dynamic scene (seeing our paper). So, if you want to achieve the two goals simultaneously, please intergrate the Acc. from IMU or use extra inter-camera correspondences if the FoVs of your camera configuration overlap.
+-  If only intra-camera feature correspondences are used, the scale of translation cannot be recovered, however, it makes our method robust to a high dynamic scene (seeing our paper). So, if you want to achieve the two goals simultaneously, please integrate the Acc. from IMU or use extra inter-camera correspondences if the FoVs of your camera configuration overlap.
 
