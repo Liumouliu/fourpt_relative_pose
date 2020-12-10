@@ -23,7 +23,7 @@ double pitch2 = rotation(1,0);
 double roll2 = rotation(1,1);
 double yaw2 = rotation(1,2);
 
-<pre>
+</pre>
 
 Although our method only use roll and pitch angles (vertical direction), for IMU with high quality (that means the yaw angle is accurate, too), you can input the yaw angle, otherwise, set it to 0.
 
