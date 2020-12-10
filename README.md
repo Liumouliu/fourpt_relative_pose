@@ -32,3 +32,5 @@ Note:
 
 -  If only intra-camera feature correspondences are used, the scale of translation cannot be recovered, however, it makes our method robust to a high dynamic scene (seeing our paper). So, if you want to achieve the two goals simultaneously, please integrate the Acc. from IMU or use extra inter-camera correspondences if the FoVs of your camera configuration overlap.
 
+-  This method can be used for both a monocular camera and a multi-camera system.
+
